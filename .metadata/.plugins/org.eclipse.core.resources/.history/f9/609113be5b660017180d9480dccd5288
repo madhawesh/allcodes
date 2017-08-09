@@ -1,0 +1,29 @@
+package pro1.pro2;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class snsau {
+WebDriver driver;
+
+@Test(priority=1)
+public void fun1()
+{
+	driver=new FirefoxDriver();
+	driver.get("http://www.syncnscan.com.au/");
+	driver.manage().window().maximize();
+	WebElement element1=driver.findElement(By.xpath("//button[text()='SHOW MY PLAN']"));
+	element1.click();
+	
+	//element2.click();
+	Actions builder1 = new Actions(driver);
+	WebElement element2=driver.findElement(By.xpath("//*[@href='#panel-0']"));
+	builder1.moveToElement(element2).click().build().perform();
+
+}
+
+}

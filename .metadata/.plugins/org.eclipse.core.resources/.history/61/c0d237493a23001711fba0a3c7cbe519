@@ -1,0 +1,29 @@
+package pro1.prjct1;
+
+import Basepkg.Baseclass;
+import junit.framework.Assert;
+
+import org.testng.annotations.Test;
+
+public class AppTest extends Baseclass
+
+{
+	
+       @Test
+	public void test1()
+	{
+		String Act= "QuTrust Admin Panellll";
+		String str1=driver.getTitle();
+		System.out.println(str1);
+Assert.assertEquals(Act, str1);
+getscreenshot();
+		}
+       
+       public void getscreenshot()
+       {
+               File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+            //The below method will save the screen shot in d drive with name "screenshot.png"
+               FileUtils.copyFile(scrFile, new File("C:\Users\madhwesh\workspace\prjct1\test-output\\screenshot.png"));
+       }
+   
+}

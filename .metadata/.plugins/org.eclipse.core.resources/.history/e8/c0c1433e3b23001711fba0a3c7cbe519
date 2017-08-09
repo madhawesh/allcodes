@@ -1,0 +1,42 @@
+package pro1.prjct1;
+
+import Basepkg.Baseclass;
+import junit.framework.Assert;
+
+import java.io.File;
+
+import org.eclipse.jetty.server.Response.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import com.sun.jna.platform.FileUtils;
+
+public class AppTest extends Baseclass
+
+{
+	public WebDriver driver;
+	
+       @Test
+	public void test1() throws Exception
+	{
+		String Act= "QuTrust Admin Panellll";
+		try{
+			 String str1=driver.getTitle();
+		}
+		catch(Exception e){
+		//	System.out.println(str1);
+			Assert.assertEquals(Act,str1);
+			getscreenshot();
+		}
+		
+	}
+       
+       public void getscreenshot()
+       {
+               File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+            //The below method will save the screen shot in d drive with name "screenshot.png"
+               FileUtils.copyFile(scrFile, new File("D:\\screenshot.png"));
+       }
+   
+}

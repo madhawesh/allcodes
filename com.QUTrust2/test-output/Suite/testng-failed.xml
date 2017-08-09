@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.QUTrust2.com.QUTrust2.Test1">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="Validlogin2"/>
+          <include name="Validlogin3"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.QUTrust2.com.QUTrust2.Test1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

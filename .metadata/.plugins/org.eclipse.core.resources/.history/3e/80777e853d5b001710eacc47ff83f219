@@ -1,0 +1,42 @@
+package bot.bot;
+
+import java.awt.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class botclass {
+WebDriver driver;
+
+@Test
+public void fun1() throws InterruptedException
+{
+driver=new FirefoxDriver();	
+driver.manage().timeouts().implicitlyWait(TimeUnit.SECONDS, 10)
+driver.get("https://www.messenger.com/");
+//maximise browser
+driver.manage().window().maximize();
+WebElement str1= driver.findElement(By.id("email"));   
+str1.sendKeys( "9555586296");;
+
+WebElement str2= driver.findElement(By.id("pass"));
+str2.sendKeys("20081990");
+WebElement submit= driver.findElement(By.id("loginbutton"));
+submit.click();
+Thread.sleep(2000);
+
+driver.findElement(By.xpath("//span[@data-offset-key='8ndde-0-0']/..//br[@data-text='true']")).sendKeys("HIII");
+//Thread.sleep(2000);
+//str4.click();
+
+//driver.close();
+// //div[@class='_1mf _1mj'] 
+}
+}
+
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Maddy" duration-ms="199" started-at="2017-04-28T08:18:13Z" finished-at="2017-04-28T08:18:13Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="47" started-at="2017-04-28T08:18:13Z" finished-at="2017-04-28T08:18:13Z">
+      <class name="com.QUTrust2.com.QUTrust2.clsexam1">
+        <test-method status="PASS" signature="fun1()[pri:1, instance:com.QUTrust2.com.QUTrust2.clsexam1@b97c004]" name="fun1" duration-ms="15" started-at="2017-04-28T13:48:13Z" finished-at="2017-04-28T13:48:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun1 -->
+      </class> <!-- com.QUTrust2.com.QUTrust2.clsexam1 -->
+    </test> <!-- Test -->
+    <test name="Test2" duration-ms="35" started-at="2017-04-28T08:18:13Z" finished-at="2017-04-28T08:18:13Z">
+      <class name="com.QUTrust2.com.QUTrust2.clsexam2">
+        <test-method status="PASS" signature="fun1()[pri:1, instance:com.QUTrust2.com.QUTrust2.clsexam2@4439f31e]" name="fun1" duration-ms="15" started-at="2017-04-28T13:48:13Z" finished-at="2017-04-28T13:48:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun1 -->
+        <test-method status="PASS" signature="fun3()[pri:2, instance:com.QUTrust2.com.QUTrust2.clsexam2@4439f31e]" name="fun3" duration-ms="0" started-at="2017-04-28T13:48:13Z" finished-at="2017-04-28T13:48:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun3 -->
+        <test-method status="PASS" signature="fun2()[pri:3, instance:com.QUTrust2.com.QUTrust2.clsexam2@4439f31e]" name="fun2" duration-ms="18" started-at="2017-04-28T13:48:13Z" finished-at="2017-04-28T13:48:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fun2 -->
+      </class> <!-- com.QUTrust2.com.QUTrust2.clsexam2 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Maddy -->
+</testng-results>

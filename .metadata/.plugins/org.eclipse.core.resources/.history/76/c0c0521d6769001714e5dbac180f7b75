@@ -1,0 +1,22 @@
+package firstexcel.excel;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class excelloop2 {
+WebDriver driver;
+
+
+@Test
+public void fun1()
+{
+driver=new FirefoxDriver();
+driver.get("http://admin.qutrust.com/");
+WebElement web=driver.findElement(By.id("username"));
+WebElement web2=driver.findElement(By.id("password"));
+
+}
+}

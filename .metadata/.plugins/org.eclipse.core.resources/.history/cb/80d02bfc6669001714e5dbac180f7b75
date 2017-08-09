@@ -1,0 +1,17 @@
+package firstexcel.excel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class excelloop2 {
+WebDriver driver;
+
+
+@Test
+public void fun1()
+{
+driver=new FirefoxDriver();
+driver.get("");
+}
+}

@@ -1,0 +1,17 @@
+package snspanel;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import Basepkg.basequikr;
+
+public class quikr extends basequikr{
+	
+	@Test
+	public void quikrmethod()
+	{
+WebElement ele1= dr.findElement(By.xpath("//*[@id='quikrcom-header']/div/div/div[3]/div[1]"));
+ele1.click();
+}
+}
